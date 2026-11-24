@@ -6,7 +6,7 @@ Proyecto 2 · DATA-1002 Aplicaciones en Ciencia de Datos · Universidad de los A
 
 **Pregunta:** ¿En qué medida cambia la identificación de países que han logrado desacoplar su crecimiento económico de las emisiones de CO₂ al comparar las emisiones territoriales con las asociadas al consumo?
 
-Para cada país se compara el crecimiento del PIB con el de sus emisiones de CO₂ entre un año inicial y un año final (por defecto 1990 y 2023) y se clasifica su desacoplamiento como absoluto, relativo o inexistente, dos veces: con las emisiones producidas dentro del país (territoriales) y con las asociadas a lo que consume (que incluyen el comercio internacional). El análisis está dirigido a un comité técnico de desarrollo sostenible, para identificar **países referentes** y **países que requieren diagnóstico adicional**.
+Para cada país se compara el crecimiento del PIB con el de sus emisiones de CO₂ entre un año inicial y un año final (por defecto 1990 y 2023) y se clasifica su desacoplamiento como absoluto, relativo o inexistente, dos veces: con las emisiones producidas dentro del país (territoriales) y con las asociadas a lo que consume (que incluyen el comercio internacional). El análisis está dirigido a un comité técnico de desarrollo sostenible, para identificar países referentes y países que requieren diagnóstico adicional.
 
 ## Dashboard
 
@@ -42,21 +42,11 @@ Todas se descargaron de [Our World in Data](https://ourworldindata.org/co2-emiss
 │   └── dashboard_desacoplamiento.py dashboard de Streamlit
 ├── outputs/figures/  gráficos generados por 02_analisis.ipynb
 ├── docs/             documento del proyecto
-├── references/       reunión con el profesor y material de apoyo
 ├── requirements.txt
 └── README.md
 ```
 
-## Cómo reproducir el análisis
-
-1. `pip install -r requirements.txt`
-2. Ejecutar `notebooks/01_preparacion_datos.ipynb` (genera `data/processed/datos_integrados.csv`).
-3. Ejecutar `notebooks/02_analisis.ipynb` (genera `clasificacion_paises.csv` y las figuras).
-4. Abrir el dashboard con `streamlit run src/dashboard_desacoplamiento.py`.
-
-El notebook de análisis reproduce el cálculo del dashboard (año inicial frente a año final), así que sus cifras coinciden con las que muestra el dashboard por defecto.
-
-## Resultados principales (1990 frente a 2023, valores por defecto del dashboard)
+## Resultados principales (1990 frente a 2023)
 
 - 26 de 116 países (22,4 %) cambian de clase al pasar de la contabilidad territorial a la de consumo; con otros años el porcentaje es similar (19 %–22 %).
 - 38 países logran desacoplamiento absoluto con la contabilidad territorial y 30 con la de consumo; 28 lo logran con ambas (referentes).
