@@ -10,7 +10,7 @@ Para cada país se compara el crecimiento del PIB con el de sus emisiones de CO�
 
 ## Dashboard
 
-- **En línea:** _(agregar el link de Streamlit Cloud)_
+- **En línea:** https://dashboarddesacoplamientopy-dvcyprwzmeye3hvyhvbl5s.streamlit.app/#explorar-paises-y-periodos 
 - **Local:** desde la raíz del proyecto
 
 ```bash
